@@ -1,2 +1,3 @@
 # Swarm-Robotics
-MATLAB and Mathematica simulation of the Rollbot developed at the Swarm Robotics Lab at Northwestern University. 
+Mathematica - Sphere:  Mathematica simulation of the Rollbot
+Rollbot_EKF - Extended Kalman filter on Matlab for Rollbot IMU Data
