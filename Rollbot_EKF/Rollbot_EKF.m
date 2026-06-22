@@ -7,12 +7,12 @@ clc
 %  quaternion. Wx, Wy, Wz are in body fram 
 % Format : (time,x,y,z,x',y',z',x'',y'',z'',w,a,b,g,Wx,Wy,Wz,θ,θ')
 % Size   : (19 x 1501)
-State = readmatrix("C:\Users\manas\OneDrive - Northwestern University\Northwestern\Robotics\State_Data.dat");
+State = readmatrix("C:\Users\manas\OneDrive - Northwestern University\Northwestern\Extracurricular\Robotics\Code\Rollbot_EKF\State_Data.dat");
 
 %  No Noise Measurements: Contains the IMU measurements we expect
 % Format : (x_acc, y_acc, z_acc, Wx, Wy, Wz, theta, theta_vel)
 % Size   : (8 x 1501)
-measurements = readmatrix("C:\Users\manas\OneDrive - Northwestern University\Northwestern\Robotics\IMU_Data.dat");
+measurements = readmatrix("C:\Users\manas\OneDrive - Northwestern University\Northwestern\Extracurricular\Robotics\Code\Rollbot_EKF\IMU_Data.dat");
 
 % Attempt 2: Back to basics
 %{
