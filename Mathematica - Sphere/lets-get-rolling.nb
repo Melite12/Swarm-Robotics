@@ -1,0 +1,767 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     32062,        759]
+NotebookOptionsPosition[     30611,        728]
+NotebookOutlinePosition[     31047,        745]
+CellTagsIndexPosition[     31004,        742]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"GeometricTransformation", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"Blue", ",", 
+          RowBox[{"Opacity", "@", ".3"}], ",", 
+          RowBox[{"Sphere", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "1"}], "]"}], ",",
+           "Red", ",", 
+          RowBox[{"Sphere", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "1", ",", "0"}], "}"}], ",", "0.1"}], "]"}]}], 
+         "}"}], ",", 
+        RowBox[{"Composition", "[", 
+         RowBox[{
+          RowBox[{"TranslationTransform", "[", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "y", ",", "1"}], "}"}], "]"}], ",", 
+          RowBox[{"RotationTransform", "[", 
+           RowBox[{"z", ",", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}], ",", 
+          RowBox[{"(*", 
+           RowBox[{"Yaw", " ", 
+            RowBox[{"(", 
+             RowBox[{"Z", "-", 
+              RowBox[{"axis", " ", "rotation"}]}], ")"}]}], "*)"}], 
+          RowBox[{"RotationTransform", "[", 
+           RowBox[{"x", ",", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "1", ",", "0"}], "}"}]}], "]"}], ",", 
+          RowBox[{"RotationTransform", "[", 
+           RowBox[{"y", ",", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "0", ",", "0"}], "}"}]}], "]"}]}], "]"}]}], 
+       "]"}], "}"}], ",", 
+     RowBox[{"Axes", "->", "True"}], ",", 
+     RowBox[{"AxesLabel", " ", "->", " ", 
+      RowBox[{"{", 
+       RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", " ", "\"\<z\>\""}], 
+       "}"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", 
+     RowBox[{"2", " ", "Pi"}], ",", "0.01"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", "0", ",", 
+     RowBox[{"2", " ", "Pi"}], ",", "0.01"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", "0", ",", 
+     RowBox[{"2", " ", "Pi"}], ",", "0.01"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9483069014797096`*^9, 3.948306915690523*^9}, 
+   3.9590876217137985`*^9},
+ CellLabel->"In[61]:=",ExpressionUUID->"73296177-e6a0-5a46-bbf5-a24600929ced"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`x$$ = 1.18, $CellContext`y$$ = 
+    0., $CellContext`z$$ = 0., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`x$$], 0, 2 Pi, 0.01, ControlType -> Manipulator}, {
+      Hold[$CellContext`y$$], 0, 2 Pi, 0.01, ControlType -> Manipulator}, {
+      Hold[$CellContext`z$$], 0, 2 Pi, 0.01, ControlType -> Manipulator}}, 
+    Typeset`size$$ = {
+    396.00000000000006`, {195.38939464552269`, 201.69452189299219`}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
+    Typeset`keyframeActionsQ$$ = False, Typeset`keyframeList$$ = {}}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`x$$ = 0, $CellContext`y$$ = 
+        0, $CellContext`z$$ = 0}, "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$, Typeset`keyframeActionsQ$$, 
+        Typeset`keyframeList$$}, "Body" :> Graphics3D[{
+         GeometricTransformation[{Blue, 
+           Opacity[0.3], 
+           Sphere[{0, 0, 0}, 1], Red, 
+           Sphere[{0, 1, 0}, 0.1]}, 
+          Composition[
+           TranslationTransform[{$CellContext`x$$, $CellContext`y$$, 1}], 
+           RotationTransform[$CellContext`z$$, {0, 0, 1}], 
+           RotationTransform[$CellContext`x$$, {0, 1, 0}], 
+           RotationTransform[$CellContext`y$$, {1, 0, 0}]]]}, Axes -> True, 
+        AxesLabel -> {"x", "y", "z"}], 
+      "Specifications" :> {{$CellContext`x$$, 0, 2 Pi, 
+         0.01}, {$CellContext`y$$, 0, 2 Pi, 0.01}, {$CellContext`z$$, 0, 2 Pi,
+          0.01}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{823.142, {225.72131847364767`, 232.02644572111717`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.9483060329537487`*^9, {3.948306908607561*^9, 3.9483069174508133`*^9}},
+ CellLabel->"Out[61]=",ExpressionUUID->"1a789dc4-420e-d148-b94b-08933451b286"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"Graphics3D", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"GeometricTransformation", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"Blue", ",", 
+           RowBox[{"Opacity", "@", ".3"}], ",", 
+           RowBox[{"Sphere", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "1"}], "]"}], 
+           ",", 
+           RowBox[{"GeometricTransformation", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"Red", ",", 
+               RowBox[{"Sphere", "[", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"0", ",", "0", ",", "1"}], "}"}], ",", "0.1"}], 
+                "]"}]}], "}"}], ",", 
+             RowBox[{"RotationTransform", "[", 
+              RowBox[{"\[CapitalDelta]", ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Tan", "[", "\[Phi]", "]"}], ",", "0", ",", "1"}], 
+                "}"}]}], "]"}]}], "]"}]}], "}"}], ",", 
+         RowBox[{"(*", 
+          RowBox[{"Pendulum", " ", "effect"}], "*)"}], 
+         RowBox[{"Composition", "[", 
+          RowBox[{
+           RowBox[{"TranslationTransform", "[", 
+            RowBox[{"{", 
+             RowBox[{"x", ",", "y", ",", "1"}], "}"}], "]"}], ",", 
+           RowBox[{"RotationTransform", "[", 
+            RowBox[{"z", ",", 
+             RowBox[{"{", 
+              RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}], ",", 
+           RowBox[{"(*", 
+            RowBox[{"Yaw", " ", 
+             RowBox[{"(", 
+              RowBox[{"Z", "-", 
+               RowBox[{"axis", " ", "rotation"}]}], ")"}]}], "*)"}], 
+           RowBox[{"RotationTransform", "[", 
+            RowBox[{"x", ",", 
+             RowBox[{"{", 
+              RowBox[{"0", ",", "1", ",", "0"}], "}"}]}], "]"}], ",", 
+           RowBox[{"RotationTransform", "[", 
+            RowBox[{"y", ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "1"}], ",", "0", ",", "0"}], "}"}]}], "]"}]}], 
+          "]"}]}], "]"}], "}"}], ",", 
+      RowBox[{"Axes", "->", "True"}], ",", 
+      RowBox[{"AxesLabel", "->", 
+       RowBox[{"{", 
+        RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}], "}"}]}]}], 
+     "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", 
+      RowBox[{"2", " ", "Pi"}], ",", "0.01"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", "0", ",", 
+      RowBox[{"2", " ", "Pi"}], ",", "0.01"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"z", ",", "0", ",", 
+      RowBox[{"2", " ", "Pi"}], ",", "0.01"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[CapitalDelta]", ",", "0", ",", 
+      RowBox[{"2", "*", "Pi"}], ",", "0.01"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Phi]", ",", "0", ",", 
+      RowBox[{"Pi", "/", "2"}], ",", "0.01"}], "}"}]}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.948307068094677*^9, 3.9483070680956764`*^9}, {
+   3.948308376901703*^9, 3.948308398140999*^9}, 3.948308521238426*^9, {
+   3.948308638065592*^9, 3.9483086391161404`*^9}, {3.948308681053709*^9, 
+   3.9483086842382393`*^9}, 3.948308763578974*^9, {3.9484065232731667`*^9, 
+   3.9484065233282967`*^9}, {3.948406558749069*^9, 3.9484065938654213`*^9}, {
+   3.9484066286436863`*^9, 3.9484066534196777`*^9}, {3.9484066975644264`*^9, 
+   3.94840673368565*^9}, {3.948407049368273*^9, 3.9484070515666847`*^9}, {
+   3.948407127545229*^9, 3.948407130670679*^9}, {3.9484071789694443`*^9, 
+   3.948407223630022*^9}, {3.9484091614450073`*^9, 3.948409254754202*^9}, 
+   3.9484092881040344`*^9},
+ CellLabel->"In[92]:=",ExpressionUUID->"aacca1bc-73c3-8643-a613-aeb54d9f44f7"],
+
+Cell[BoxData["\[AliasDelimiter]"], "Input",
+ CellChangeTimes->{{3.9576270578069744`*^9, 
+  3.957627057821501*^9}},ExpressionUUID->"121126e6-54da-8b4d-b5d4-\
+9e0b9e7a27fa"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", "sphereTransform", "}"}], ",", 
+      RowBox[{
+       RowBox[{"sphereTransform", "=", 
+        RowBox[{"Composition", "[", 
+         RowBox[{
+          RowBox[{"TranslationTransform", "[", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "y", ",", "1"}], "}"}], "]"}], ",", 
+          RowBox[{"RotationTransform", "[", 
+           RowBox[{"z", ",", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}], ",", 
+          RowBox[{"(*", 
+           RowBox[{"Yaw", " ", 
+            RowBox[{"(", 
+             RowBox[{"Z", "-", 
+              RowBox[{"axis", " ", "rotation"}]}], ")"}]}], "*)"}], 
+          RowBox[{"RotationTransform", "[", 
+           RowBox[{"x", ",", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "1", ",", "0"}], "}"}]}], "]"}], ",", 
+          RowBox[{"(*", 
+           RowBox[{"Roll", " ", 
+            RowBox[{"(", 
+             RowBox[{"Y", "-", 
+              RowBox[{"axis", " ", "rotation"}]}], ")"}]}], "*)"}], 
+          RowBox[{"RotationTransform", "[", 
+           RowBox[{"y", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "1"}], ",", "0", ",", "0"}], "}"}]}], "]"}]}], " ", 
+         RowBox[{"(*", 
+          RowBox[{"Pitch", " ", 
+           RowBox[{"(", 
+            RowBox[{"X", "-", 
+             RowBox[{"axis", " ", "rotation"}]}], ")"}]}], "*)"}], "]"}]}], 
+       ";", "\[IndentingNewLine]", 
+       RowBox[{"Graphics3D", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"GeometricTransformation", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"Blue", ",", 
+               RowBox[{"Opacity", "@", ".3"}], ",", 
+               RowBox[{"Sphere", "[", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "1"}], "]"}],
+                ",", 
+               RowBox[{"GeometricTransformation", "[", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"Red", ",", 
+                   RowBox[{"Sphere", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", "1"}], "}"}], ",", "0.1"}], 
+                    "]"}]}], "}"}], ",", 
+                 RowBox[{"RotationTransform", "[", 
+                  RowBox[{"\[CapitalDelta]", ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Tan", "[", "\[Phi]", "]"}], ",", "0", ",", "1"}],
+                     "}"}]}], "]"}]}], "]"}]}], "}"}], ",", 
+             "sphereTransform"}], "]"}], ",", 
+           RowBox[{"(*", 
+            RowBox[{"Apply", " ", "sphere", " ", "transform"}], "*)"}], 
+           RowBox[{"(*", 
+            RowBox[{"Internal", " ", "Axes"}], "*)"}], 
+           RowBox[{"GeometricTransformation", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"Thick", ",", "Red", ",", 
+               RowBox[{"Line", "[", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"1", ",", "0", ",", "0"}], "}"}]}], "}"}], "]"}], 
+               ",", 
+               RowBox[{"(*", 
+                RowBox[{"X", "-", "axis"}], "*)"}], "Green", ",", 
+               RowBox[{"Line", "[", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "1", ",", "0"}], "}"}]}], "}"}], "]"}], 
+               ",", 
+               RowBox[{"(*", 
+                RowBox[{"Y", "-", "axis"}], "*)"}], "Blue", ",", 
+               RowBox[{"Line", "[", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "}"}], "]"}]}],
+               "  ", 
+              RowBox[{"(*", 
+               RowBox[{"Z", "-", "axis"}], "*)"}], "}"}], ",", 
+             "sphereTransform"}], "]"}]}], " ", 
+          RowBox[{"(*", 
+           RowBox[{
+           "Apply", " ", "same", " ", "transform", " ", "to", " ", "axes"}], 
+           "*)"}], "}"}], ",", 
+         RowBox[{"Axes", "->", "True"}], ",", 
+         RowBox[{"AxesLabel", "->", 
+          RowBox[{"{", 
+           RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}], 
+           "}"}]}]}], "]"}]}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", 
+      RowBox[{"2", " ", "Pi"}], ",", "0.01"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", "0", ",", 
+      RowBox[{"2", " ", "Pi"}], ",", "0.01"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"z", ",", "0", ",", 
+      RowBox[{"2", " ", "Pi"}], ",", "0.01"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[CapitalDelta]", ",", "0", ",", 
+      RowBox[{"2", "*", "Pi"}], ",", "0.01"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Phi]", ",", "0", ",", 
+      RowBox[{"Pi", "/", "2"}], ",", "0.01"}], "}"}]}], "]"}], 
+  "\n"}]], "Input",
+ CellChangeTimes->{{3.948409012963093*^9, 3.9484090481636066`*^9}, 
+   3.9484093276500893`*^9, 3.948409760646904*^9},
+ CellLabel->"In[94]:=",ExpressionUUID->"20350d3c-7700-974b-9b66-dd99ac9c2d0e"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`x$$ = 0., $CellContext`y$$ = 
+    0., $CellContext`z$$ = 0., $CellContext`\[CapitalDelta]$$ = 
+    0., $CellContext`\[Phi]$$ = 0., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`x$$], 0, 2 Pi, 0.01, ControlType -> Manipulator}, {
+      Hold[$CellContext`y$$], 0, 2 Pi, 0.01, ControlType -> Manipulator}, {
+      Hold[$CellContext`z$$], 0, 2 Pi, 0.01, ControlType -> Manipulator}, {
+      Hold[$CellContext`\[CapitalDelta]$$], 0, 2 Pi, 0.01, ControlType -> 
+      Manipulator}, {
+      Hold[$CellContext`\[Phi]$$], 0, Rational[1, 2] Pi, 0.01, ControlType -> 
+      Manipulator}}, Typeset`size$$ = {
+    396.00000000000006`, {199.08623572060054`, 205.39136296807004`}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
+    Typeset`keyframeActionsQ$$ = False, Typeset`keyframeList$$ = {}}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`x$$ = 0, $CellContext`y$$ = 
+        0, $CellContext`z$$ = 0, $CellContext`\[CapitalDelta]$$ = 
+        0, $CellContext`\[Phi]$$ = 0}, "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$, Typeset`keyframeActionsQ$$, 
+        Typeset`keyframeList$$}, "Body" :> 
+      Module[{$CellContext`sphereTransform$}, $CellContext`sphereTransform$ = 
+         Composition[
+           TranslationTransform[{$CellContext`x$$, $CellContext`y$$, 1}], 
+           RotationTransform[$CellContext`z$$, {0, 0, 1}], 
+           RotationTransform[$CellContext`x$$, {0, 1, 0}], 
+           RotationTransform[$CellContext`y$$, {-1, 0, 0}]]; Graphics3D[{
+           GeometricTransformation[{Blue, 
+             Opacity[0.3], 
+             Sphere[{0, 0, 0}, 1], 
+             GeometricTransformation[{Red, 
+               Sphere[{0, 0, 1}, 0.1]}, 
+              RotationTransform[$CellContext`\[CapitalDelta]$$, {
+                Tan[$CellContext`\[Phi]$$], 0, 
+                1}]]}, $CellContext`sphereTransform$], 
+           GeometricTransformation[{Thick, Red, 
+             Line[{{0, 0, 0}, {1, 0, 0}}], Green, 
+             Line[{{0, 0, 0}, {0, 1, 0}}], Blue, 
+             Line[{{0, 0, 0}, {0, 0, 1}}]}, $CellContext`sphereTransform$]}, 
+          Axes -> True, AxesLabel -> {"x", "y", "z"}]], 
+      "Specifications" :> {{$CellContext`x$$, 0, 2 Pi, 
+         0.01}, {$CellContext`y$$, 0, 2 Pi, 0.01}, {$CellContext`z$$, 0, 2 Pi,
+          0.01}, {$CellContext`\[CapitalDelta]$$, 0, 2 Pi, 
+         0.01}, {$CellContext`\[Phi]$$, 0, Rational[1, 2] Pi, 0.01}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{823.142, {229.41815954872553`, 235.72328679619503`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.9484097615017433`*^9},
+ CellLabel->"Out[94]=",ExpressionUUID->"886344a0-1a4d-a346-8f4d-478235318aca"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "sphereTransform", ",", "internalMassTransform", ",", 
+        "internalMassPos"}], "}"}], ",", 
+      RowBox[{
+       RowBox[{"sphereTransform", "=", 
+        RowBox[{"Composition", "[", 
+         RowBox[{
+          RowBox[{"TranslationTransform", "[", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "y", ",", "1"}], "}"}], "]"}], ",", 
+          RowBox[{"RotationTransform", "[", 
+           RowBox[{"z", ",", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}], ",", 
+          RowBox[{"(*", 
+           RowBox[{"Yaw", " ", 
+            RowBox[{"(", 
+             RowBox[{"Z", "-", 
+              RowBox[{"axis", " ", "rotation"}]}], ")"}]}], "*)"}], 
+          RowBox[{"RotationTransform", "[", 
+           RowBox[{"x", ",", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "1", ",", "0"}], "}"}]}], "]"}], ",", 
+          RowBox[{"(*", 
+           RowBox[{"Roll", " ", 
+            RowBox[{"(", 
+             RowBox[{"Y", "-", 
+              RowBox[{"axis", " ", "rotation"}]}], ")"}]}], "*)"}], 
+          RowBox[{"RotationTransform", "[", 
+           RowBox[{"y", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "1"}], ",", "0", ",", "0"}], "}"}]}], "]"}]}], " ", 
+         RowBox[{"(*", 
+          RowBox[{"Pitch", " ", 
+           RowBox[{"(", 
+            RowBox[{"X", "-", 
+             RowBox[{"axis", " ", "rotation"}]}], ")"}]}], "*)"}], "]"}]}], 
+       ";", "\[IndentingNewLine]", 
+       RowBox[{"internalMassTransform", "=", 
+        RowBox[{"RotationTransform", "[", 
+         RowBox[{"\[CapitalDelta]", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Tan", "[", "\[Phi]", "]"}], ",", "0", ",", "1"}], 
+           "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"internalMassPos", "=", 
+        RowBox[{"internalMassTransform", "[", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "1"}], "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Graphics3D", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"GeometricTransformation", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"Blue", ",", 
+               RowBox[{"Opacity", "@", ".3"}], ",", 
+               RowBox[{"Sphere", "[", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "1"}], "]"}],
+                ",", 
+               RowBox[{"GeometricTransformation", "[", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"Red", ",", 
+                   RowBox[{"Sphere", "[", 
+                    RowBox[{"internalMassPos", ",", "0.1"}], "]"}]}], "}"}], 
+                 ",", "internalMassTransform"}], "]"}]}], "}"}], ",", 
+             "sphereTransform"}], "]"}], ",", 
+           RowBox[{"(*", 
+            RowBox[{"Apply", " ", "sphere", " ", "transform"}], "*)"}], 
+           RowBox[{"(*", 
+            RowBox[{"Internal", " ", "Axes"}], "*)"}], 
+           RowBox[{"GeometricTransformation", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"Thick", ",", "Red", ",", 
+               RowBox[{"Line", "[", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"1", ",", "0", ",", "0"}], "}"}]}], "}"}], "]"}], 
+               ",", 
+               RowBox[{"(*", 
+                RowBox[{"X", "-", "axis"}], "*)"}], "Green", ",", 
+               RowBox[{"Line", "[", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "1", ",", "0"}], "}"}]}], "}"}], "]"}], 
+               ",", 
+               RowBox[{"(*", 
+                RowBox[{"Y", "-", "axis"}], "*)"}], "Blue", ",", 
+               RowBox[{"Line", "[", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "}"}], "]"}]}],
+               "  ", 
+              RowBox[{"(*", 
+               RowBox[{"Z", "-", "axis"}], "*)"}], "}"}], ",", 
+             "sphereTransform"}], "]"}], ",", 
+           RowBox[{"(*", 
+            RowBox[{
+            "Apply", " ", "same", " ", "transform", " ", "to", " ", "axes"}], 
+            "*)"}], 
+           RowBox[{"(*", 
+            RowBox[{
+            "Line", " ", "from", " ", "Sphere", " ", "Center", " ", "to", " ",
+              "Internal", " ", "Mass"}], "*)"}], 
+           RowBox[{"GeometricTransformation", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"Black", ",", "Thick", ",", 
+               RowBox[{"Line", "[", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+                  "internalMassPos"}], "}"}], "]"}]}], "}"}], ",", 
+             "sphereTransform"}], "]"}]}], "}"}], ",", 
+         RowBox[{"Axes", "->", "True"}], ",", 
+         RowBox[{"AxesLabel", "->", 
+          RowBox[{"{", 
+           RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}], 
+           "}"}]}]}], "]"}]}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", 
+      RowBox[{"2", " ", "Pi"}], ",", "0.01"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", "0", ",", 
+      RowBox[{"2", " ", "Pi"}], ",", "0.01"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"z", ",", "0", ",", 
+      RowBox[{"2", " ", "Pi"}], ",", "0.01"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[CapitalDelta]", ",", "0", ",", "Pi", ",", "0.01"}], "}"}], 
+    ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Phi]", ",", "0", ",", 
+      RowBox[{"Pi", "/", "2"}], ",", "0.01"}], "}"}]}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.948409898522381*^9, 3.9484098997146416`*^9}, 
+   3.9484099987799187`*^9, {3.94841133872735*^9, 3.948411358979164*^9}, {
+   3.9484114164447517`*^9, 3.9484114454116535`*^9}, {3.948411668996628*^9, 
+   3.9484116798192616`*^9}},
+ CellLabel->
+  "In[290]:=",ExpressionUUID->"a0f98d6e-b0d4-9745-b8c8-adb1b8b7fa64"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`x$$ = 0., $CellContext`y$$ = 
+    0., $CellContext`z$$ = 0., $CellContext`\[CapitalDelta]$$ = 
+    0., $CellContext`\[Phi]$$ = 0., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`x$$], 0, 2 Pi, 0.01, ControlType -> Manipulator}, {
+      Hold[$CellContext`y$$], 0, 2 Pi, 0.01, ControlType -> Manipulator}, {
+      Hold[$CellContext`z$$], 0, 2 Pi, 0.01, ControlType -> Manipulator}, {
+      Hold[$CellContext`\[CapitalDelta]$$], 0, Pi, 0.01, ControlType -> 
+      Manipulator}, {
+      Hold[$CellContext`\[Phi]$$], 0, Rational[1, 2] Pi, 0.01, ControlType -> 
+      Manipulator}}, Typeset`size$$ = {
+    396.00000000000006`, {199.08623572060054`, 205.39136296807004`}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
+    Typeset`keyframeActionsQ$$ = False, Typeset`keyframeList$$ = {}}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`x$$ = 0, $CellContext`y$$ = 
+        0, $CellContext`z$$ = 0, $CellContext`\[CapitalDelta]$$ = 
+        0, $CellContext`\[Phi]$$ = 0}, "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$, Typeset`keyframeActionsQ$$, 
+        Typeset`keyframeList$$}, "Body" :> 
+      Module[{$CellContext`sphereTransform$, \
+$CellContext`internalMassTransform$, $CellContext`internalMassPos$}, \
+$CellContext`sphereTransform$ = Composition[
+           TranslationTransform[{$CellContext`x$$, $CellContext`y$$, 1}], 
+           RotationTransform[$CellContext`z$$, {0, 0, 1}], 
+           RotationTransform[$CellContext`x$$, {0, 1, 0}], 
+           
+           RotationTransform[$CellContext`y$$, {-1, 0, 
+            0}]]; $CellContext`internalMassTransform$ = 
+         RotationTransform[$CellContext`\[CapitalDelta]$$, {
+            Tan[$CellContext`\[Phi]$$], 0, 
+            1}]; $CellContext`internalMassPos$ = \
+$CellContext`internalMassTransform$[{0, 0, 1}]; Graphics3D[{
+           GeometricTransformation[{Blue, 
+             Opacity[0.3], 
+             Sphere[{0, 0, 0}, 1], 
+             GeometricTransformation[{Red, 
+               
+               Sphere[$CellContext`internalMassPos$, 
+                0.1]}, $CellContext`internalMassTransform$]}, \
+$CellContext`sphereTransform$], 
+           GeometricTransformation[{Thick, Red, 
+             Line[{{0, 0, 0}, {1, 0, 0}}], Green, 
+             Line[{{0, 0, 0}, {0, 1, 0}}], Blue, 
+             Line[{{0, 0, 0}, {0, 0, 1}}]}, $CellContext`sphereTransform$], 
+           GeometricTransformation[{Black, Thick, 
+             
+             Line[{{0, 0, 
+               0}, $CellContext`internalMassPos$}]}, \
+$CellContext`sphereTransform$]}, Axes -> True, AxesLabel -> {"x", "y", "z"}]],
+       "Specifications" :> {{$CellContext`x$$, 0, 2 Pi, 
+         0.01}, {$CellContext`y$$, 0, 2 Pi, 0.01}, {$CellContext`z$$, 0, 2 Pi,
+          0.01}, {$CellContext`\[CapitalDelta]$$, 0, Pi, 
+         0.01}, {$CellContext`\[Phi]$$, 0, Rational[1, 2] Pi, 0.01}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{823.142, {229.41815954872553`, 235.72328679619503`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.9484099005206337`*^9, 3.9484100010464554`*^9, {3.9484113427640457`*^9, 
+   3.94841135933646*^9}, {3.9484114205318375`*^9, 3.9484114340986233`*^9}, 
+   3.948411609772373*^9, 3.9484116735770683`*^9, 3.948411875415228*^9, 
+   3.950819647718067*^9, 3.9576270954272404`*^9, 3.959102719781927*^9},
+ CellLabel->
+  "Out[290]=",ExpressionUUID->"80e4ab9e-4732-2d4b-b29c-b48261e9030f"]
+}, Open  ]],
+
+Cell[BoxData[
+ SubscriptBox[
+  SubscriptBox["\[AliasDelimiter]", "\[Placeholder]"], 
+  "\[Placeholder]"]], "Input",
+ CellChangeTimes->{{3.95081971993186*^9, 3.9508197210396557`*^9}, 
+   3.9508198537139225`*^9},ExpressionUUID->"b410a352-0e6d-3748-b352-\
+669ba9681560"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+   "this", " ", "is", " ", "quite", " ", "a", " ", "good", " ", "model"}], 
+   ",", " ", 
+   RowBox[{
+   "just", " ", "the", " ", "black", " ", "arrow", " ", "following", " ", 
+    "the", " ", "red", " ", "sphere", " ", 
+    RowBox[{"isn", "'"}], "t", " ", "working", " ", "properly"}]}], 
+  "*)"}]], "Input",
+ CellChangeTimes->{{3.948839426441969*^9, 
+  3.948839466452736*^9}},ExpressionUUID->"f80644b8-a500-744d-9935-\
+333700550e0d"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.9488411718058205`*^9, 3.9488411730167885`*^9}, {
+  3.9488413247260437`*^9, 
+  3.948841376318939*^9}},ExpressionUUID->"9ce770c0-12d5-974b-a9ea-\
+ed3fc13bbe67"]
+},
+WindowSize->{949.5, 522},
+WindowMargins->{{0.375, Automatic}, {Automatic, 0.375}},
+Magnification:>1.1 Inherited,
+FrontEndVersion->"14.1 for Microsoft Windows (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"fd1246ed-c61a-7a49-b9d5-fb2d2592e048"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 2293, 60, 114, "Input",ExpressionUUID->"73296177-e6a0-5a46-bbf5-a24600929ced"],
+Cell[2872, 84, 2663, 51, 476, "Output",ExpressionUUID->"1a789dc4-420e-d148-b94b-08933451b286"]
+}, Open  ]],
+Cell[5550, 138, 3756, 89, 198, "Input",ExpressionUUID->"aacca1bc-73c3-8643-a613-aeb54d9f44f7"],
+Cell[9309, 229, 171, 3, 31, "Input",ExpressionUUID->"121126e6-54da-8b4d-b5d4-9e0b9e7a27fa"],
+Cell[CellGroupData[{
+Cell[9505, 236, 5571, 139, 282, "Input",ExpressionUUID->"20350d3c-7700-974b-9b66-dd99ac9c2d0e"],
+Cell[15079, 377, 3591, 66, 483, "Output",ExpressionUUID->"886344a0-1a4d-a346-8f4d-478235318aca"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18707, 448, 6596, 164, 365, "Input",ExpressionUUID->"a0f98d6e-b0d4-9745-b8c8-adb1b8b7fa64"],
+Cell[25306, 614, 4318, 82, 483, "Output",ExpressionUUID->"80e4ab9e-4732-2d4b-b29c-b48261e9030f"]
+}, Open  ]],
+Cell[29639, 699, 267, 6, 31, "Input",ExpressionUUID->"b410a352-0e6d-3748-b352-669ba9681560"],
+Cell[29909, 707, 488, 13, 31, "Input",ExpressionUUID->"f80644b8-a500-744d-9935-333700550e0d"],
+Cell[30400, 722, 207, 4, 31, "Input",ExpressionUUID->"9ce770c0-12d5-974b-a9ea-ed3fc13bbe67"]
+}
+]
+*)
+
